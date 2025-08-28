@@ -1,0 +1,58 @@
+.reveal-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.reveal-text {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  position: absolute;
+  left: 0.5rem;
+  white-space: nowrap;
+}
+
+.reveal-arrow {
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+
+.reveal-button:hover .reveal-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-button:hover .reveal-arrow {
+  transform: translateX(1.5rem); /* arrow moves right revealing "Next" */
+}
+
+/* Reverse for Left Button */
+.reveal-button.left {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.reveal-button.left .reveal-text {
+  left: auto;
+  right: 0.5rem;
+  transform: translateX(20px);
+}
+
+.reveal-button.left:hover .reveal-text {
+  transform: translateX(0);
+}
+
+.reveal-button.left:hover .reveal-arrow {
+  transform: translateX(-1.5rem);
+}

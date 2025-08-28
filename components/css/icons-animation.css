@@ -1,0 +1,75 @@
+/* Rotating Border Animation */
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-border {
+  position: relative;
+  display: inline-block;
+}
+
+.rotating-border::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: conic-gradient(
+    transparent 0deg,
+    transparent 50deg,
+    #f6833b 300deg,
+    #ec1313 360deg,
+    transparent 0deg
+  );
+  border-radius: 50%;
+  animation: rotate-border 1s linear infinite;
+  z-index: -1;
+  mask: radial-gradient(circle, transparent 60%, black 65%);
+  -webkit-mask: radial-gradient(circle, transparent 66%, black 66%);
+}
+
+/* Pause animation on hover for better UX */
+.rotating-border:hover::before {
+  animation-play-state: paused;
+}
+
+/* Enhanced focus and hover state management */
+.social-icon {
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15) !important;
+}
+
+/* Reset scale when focused but not hovered */
+.social-icon:focus:not(:hover) {
+  transform: scale(1) !important;
+}
+
+/* Ensure proper scaling behavior */
+.social-icon:not(:hover):not(:active) {
+  transform: scale(1) !important;
+}
+
+/* Force normal scale class for problematic states */
+.social-icon.force-normal-scale {
+  transform: scale(1) !important;
+}
+
+/* Additional specificity for focus states */
+.social-icon:focus {
+  outline: none;
+}
+
+/* Handle mouse leave to ensure scale resets */
+.social-icon:not(:hover) {
+  transform: scale(1);
+}

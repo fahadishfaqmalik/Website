@@ -1,0 +1,30 @@
+/* Add this to your button-animation.css file */
+
+.gradient-border-button {
+  position: relative;
+  background: white;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.gradient-border-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background: linear-gradient(to right, #4ade80, #eab308, #f97316, #ef4444, #a855f7);
+}
+
+.gradient-border-button:hover::before {
+  background: linear-gradient(to right, #86efac, #fde047, #fb923c, #f87171, #c084fc);
+}
+
+/* Dark mode version */
+.dark .gradient-border-button {
+  background: rgba(255, 255, 255, 0.1);
+}
