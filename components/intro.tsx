@@ -92,7 +92,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Ali Hassan Resume.pdf" // <-- Corrected path
+          href="/Fahad ishfaq Resume.pdf" // <-- Corrected path
           download
         >
           Download CV{" "}
@@ -101,18 +101,11 @@ export default function Intro() {
 
         <a
           className="social-icon rotating-border bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/mralihassan02/"
+          href="https://www.linkedin.com/in/fahad-ishfaq-malik/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <BsLinkedin />
-        </a>
-
-        <a
-          className="social-icon rotating-border bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Ali-Hassan02"
-          target="_blank"
-        >
-          <FaGithubSquare />
         </a>
       </motion.div>
     </section>
