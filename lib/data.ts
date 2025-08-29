@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import netflix from "@/public/netflix.png";
-import brain from "@/public/brain.jpg";
-import mentormesh from "@/public/mentor-mesh-v1.jpg";
+// import netflix from "@/public/netflix.png";
+import brain from "@/public/profile.jpg";
+import mentormesh from "@/public/profile.jpg";
+import netflix from "@/public/profile.jpg";
 
 export const links = [
   {
