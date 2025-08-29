@@ -10,7 +10,7 @@ export default function Contact() {
   const { ref } = useSectionInView("Contact");
 
   const gmailLink =
-    "https://mail.google.com/mail/?view=cm&fs=1&to=mralihassan02@gmail.com";
+    "https://mail.google.com/mail/?view=cm&fs=1&to=fahadishfaqmalik@gmail.com";
 
   return (
     <motion.section
@@ -32,14 +32,14 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          mralihassan02@gmail.com
+          fahadishfaqmalik@gmail.com
         </a>
       </p>
 
       {/* Gmail Icon */}
       <div className="mt-6 flex justify-center">
         <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=mralihassan02@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=fahadishfaqmalik@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="transition-transform hover:scale-110 social-icon rotating-border bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"

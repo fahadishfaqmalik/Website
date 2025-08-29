@@ -36,42 +36,44 @@ export const links = [
 
 export const experiencesData = [
   {
-    organization: "Systems Limited",
-    title: "Internee",
-    location: "Lahore / Pakistan",
+    organization: "Airbnb",
+    title: "Host",
+    location: "Lahore (Hybrid) / Pakistan",
     description:
-      "Built a full-stack e-commerce website using the MERN stack with separate panels for users and admins. Users could securely browse, add to cart, and checkout. Admins could manage the store with full CRUD functionality.",
+      "Furnished and managed a short-term rental business from scratch, handling listings, marketing, and guest services.Responded customer queries | resolved issues | ensuring smooth stays and repeat bookings | Positive guest reviewsManage operations, Maintenance, Executed marketing campaigns, increase occupancy and retained loyal clients",
     icon: React.createElement(CgWorkAlt),
-    date: "Jul 2024 – Aug 2024",
+    date: "Dec 2024 – Aug 2025",
   },
   {
-    organization : "FAST NUCES" , 
-    title: "Teaching Assistant",
-    location: "Lahore / Pakistan",
+    organization: "Amazon Virtual Assistant",
+    title: "Freelancer / VA",
+    location: "Lahore (Hybrid) / Pakistan",
     description:
-      "Assisted over 150+ students by evaluating quizzes and assignments and providing guidance in Data Structures (Spring 2024), Design and Analysis of Algorithms (Spring 2024), and Artificial Intelligence (Fall 2024).",
+      "Managed Amazon private label and wholesale | Product sourcing from China, Branding | Keyword optimization,Listing creation | Competitor analysis. Increased client sales by improving listing visibility and pricing strategies.",
     icon: React.createElement(CgWorkAlt),
-    date: "Jan 2024 – Dec 2024",
-  }
+    date: "Jan 2023 – Dec 2024",
+  },
+  {
+    organization: "Ittifaq Steel Mills",
+    title: "Internship",
+    location: "Lahore (onsite) / Pakistan",
+    description:
+      "Corporate communications and client site visits. Gained practical exposure to lead generation and deal closures.",
+    icon: React.createElement(CgWorkAlt),
+    date: "July 2022 – Sep 2022",
+  },
 ] as const;
 
 
 export const projectsData = [
   {
-    title: "Movie Streaming Platform",
+    title: "Lean Opertions",
     description:
-      "I built a Netflix-style movie platform with Next.js. It includes browsing, search, ratings, and a real-time admin panel.",
-    tags: [
-      "Next.js",
-      "MongoDB",
-      "Tailwind",
-      "Node.js",
-      "Express.js",
-      "Material UI",
-    ],
+      "Front end (Customer focused Items) and back end (7+1 Wastes (8W’s) and 7S’es)",
+    tags: ["Eliminate Waste", "MongRemove Variability", "improve throughput"],
     imageUrl: netflix,
     linkedInUrl: "https://www.linkedin.com/in/mralihassan02/details/projects/",
-    githubUrl: "https://github.com/Ali-Hassan02/Movie-Streaming-Website",
+
     videoUrls: [
       "https://youtu.be/2oxWYaVgAlw",
       "https://youtu.be/a_m9dGsqKr4",
@@ -81,28 +83,21 @@ export const projectsData = [
     ],
   },
   {
-    title: "🧠 AI-Powered Brain Ischemic Stroke Segmentation",
+    title: "Sufi Oil Marketing Plan",
     description:
-      "AI-powered stroke segmentation app using Federated Learning with Next.js and Flask — secure, decentralized, and privacy-preserving.",
-    tags: ["Next.js", "Flask", "Tailwind", "Material UI"],
+      "Objective, issue and executive summary | 4P's and geographical graph | Current Marketing situation, Product and competitive review | Market research, Swot analysis",
+    tags: ["Marketing and sale campaign"],
     imageUrl: brain,
     linkedInUrl: "https://www.linkedin.com/in/mralihassan02/details/projects/",
-    githubUrl:
-      "https://github.com/Ali-Hassan02/AI-Powered-Web-for-Brain-Stroke-Segmentation",
 
     videoUrls: ["https://youtu.be/n4cRFxpJ6Mc"],
   },
   {
-    title: "Mentor Mesh",
+    title: "Sansify",
     description:
-      "Mentor Mesh connects students and teachers within an organization to simplify Final Year Project (FYP) selection. Teachers post project ideas, and students explore teacher profiles to find the right mentor.",
+      "Branding | 4Ps | Build a online brand, Sell around 200+ Bottles in Business bazar | Sale Force Management",
     tags: [
-      "React",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind",
-      "Chakra UI",
+      "Perfume brand" , "Business banazar 23"
     ],
     imageUrl: mentormesh,
     linkedInUrl: "https://www.linkedin.com/in/mralihassan02/details/projects/",
@@ -113,23 +108,32 @@ export const projectsData = [
       "https://youtu.be/2YnwgYh8mu4",
     ],
   },
-] ;
+]; ;
 
 
 export const skillsData = [
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "HTML",
-  "CSS",
-  "Git",
-  "Tailwind",
-  "MongoDB",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Flask"
+  // E-commerce & Business
+  "Amazon Private Label & Wholesale",
+  "Airbnb Hosting",
+  "Property Management",
+  "4Ps",
+  "Market Research",
+  "Listing Optimization",
+  "PPC Management",
+  "Client Communication",
+  "Negotiation",
+  "Sales Force Management",
+
+  // Digital Tools & Marketing
+  "Meta Ads",
+  "Canva",
+  "Microsoft Word",
+  "Excel",
+  "PowerPoint",
+  "Google Docs & Slides",
+
+  // Business Analytics & Strategy
+  "Lean Six Sigma (DMAIC)",
+  "Lean Operations (TIMWOOD)",
+  "Project Management",
 ] as const;

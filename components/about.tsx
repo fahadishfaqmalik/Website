@@ -20,25 +20,50 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
 
       <p className="mb-3 dark:text-white/70">
-        A <span className="font-bold dark:text-white/70">Gold Medalist</span> recognized
-        on the{" "}
+        A highly motivated{" "}
         <span className="font-bold dark:text-white/70">
-          Rector's and Dean's List of Honour
+          Business (Marketing & Sales) graduate
         </span>{" "}
-        from <span className="font-bold dark:text-white/70">FAST NUCES</span>, I'm a
-        passionate{" "}
+        from{" "}
         <span className="font-bold dark:text-white/70">
-          Full-Stack Software Engineer
+          Forman Christian College
         </span>{" "}
-        specializing in{" "}
+        with a{" "}
+        <span className="font-bold dark:text-white/70">CGPA of 3.52/4.0</span>.
+        Skilled in{" "}
         <span className="font-bold dark:text-white/70">
-          Next.js, React, Node.js, and MongoDB
+          Amazon FBA (Private Label & Wholesale)
         </span>
-        . I focus on building{" "}
-        <span className="font-bold dark:text-white/70">user-friendly</span> and{" "}
-        <span className="font-bold dark:text-white/70">secure web applications</span>,
-        and I'm driven by a strong commitment to{" "}
-        <span className="font-bold dark:text-white/70">collaborative development</span>.
+        ,{" "}
+        <span className="font-bold dark:text-white/70">
+          Airbnb business operations
+        </span>
+        ,{" "}
+        <span className="font-bold dark:text-white/70">digital marketing</span>,
+        and{" "}
+        <span className="font-bold dark:text-white/70">
+          property management
+        </span>
+        .
+      </p>
+
+      <p className="dark:text-white/70">
+        I specialize in{" "}
+        <span className="font-bold dark:text-white/70">
+          market research, product sourcing, listing optimization, PPC
+          campaigns, and client relationship management
+        </span>
+        . Experienced in{" "}
+        <span className="font-bold dark:text-white/70">
+          building businesses from scratch
+        </span>
+        , handling{" "}
+        <span className="font-bold dark:text-white/70">customer service</span>,
+        and driving growth through{" "}
+        <span className="font-bold dark:text-white/70">
+          data-driven strategies
+        </span>
+        .
       </p>
     </motion.section>
   );
