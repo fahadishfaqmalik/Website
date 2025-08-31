@@ -66,19 +66,22 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Lean Opertions",
+    title: "Lean Opertions and Deming Wheel",
     description:
       "Front end (Customer focused Items) and back end (7+1 Wastes (8W’s) and 7S’es)",
     tags: ["Eliminate Waste", "MongRemove Variability", "improve throughput"],
-    imageUrl: netflix,
-    linkedInUrl: "https://www.linkedin.com/in/mralihassan02/details/projects/",
+    imageUrl:
+      "https://drive.google.com/uc?export=view&id=19nzhnIukUOStUphm0ZnJaHufXh9d_K4g",
+
+    linkedInUrl: "https://www.linkedin.com/in/fahad-ishfaq-malik/",
 
     videoUrls: [
-      "https://youtu.be/2oxWYaVgAlw",
-      "https://youtu.be/a_m9dGsqKr4",
-      "https://youtu.be/pvdZnQqgISM",
-      "https://youtu.be/ZGUmc6w9xxo",
-      "https://youtu.be/iayiWhdgPZg",
+      "https://drive.google.com/uc?export=view&id=19lczcfTY23avauu6KSyBt87eGHdih_O4",
+      "https://drive.google.com/uc?export=view&id=19mHJ-NuOEbrscnqycpJJUqYmV943J2lt",
+      "https://drive.google.com/uc?export=view&id=19sI9WTeyIajClDqb5rS8VJ6wslCm_lTM",
+      "https://drive.google.com/uc?export=view&id=19o4EavckTrLz8tVgCCr6ixm-2Q02K9Mn",
+      "https://drive.google.com/uc?export=view&id=19nzhnIukUOStUphm0ZnJaHufXh9d_K4g",
+      "https://drive.google.com/uc?export=view&id=1A3py9oafKhdlVyfGLp7rxPp8kK28zSgS",
     ],
   },
   {
@@ -86,23 +89,33 @@ export const projectsData = [
     description:
       "Objective, issue and executive summary | 4P's and geographical graph | Current Marketing situation, Product and competitive review | Market research, Swot analysis",
     tags: ["Marketing and sale campaign"],
-    imageUrl: brain,
-    linkedInUrl: "https://www.linkedin.com/in/mralihassan02/details/projects/",
+    imageUrl:
+      "https://drive.google.com/uc?export=view&id=19y33pzR5uLgxOef_d0QNJndSk5NyqeD-",
+    linkedInUrl: "https://www.linkedin.com/in/fahad-ishfaq-malik/",
 
-    videoUrls: ["https://youtu.be/n4cRFxpJ6Mc"],
+    videoUrls: [
+      "https://drive.google.com/uc?export=view&id=1Qb2xkzDs3ZruaHZNNkyddZ8cDytoiMJt",
+      "https://drive.google.com/uc?export=view&id=1g1Y0tjzkVwWNoprLZNLiHe3KeatdII6c",
+      "https://drive.google.com/uc?export=view&id=1FLxX7mmM7ymEEsElNAjTGqfFPpvVJttY",
+      "https://drive.google.com/uc?export=view&id=19whYYEQOId0FWbWJFs0a_anfMRAMg7uc",
+      "https://drive.google.com/uc?export=view&id=1A-Rp8uw_3AZBtg0FfHCfU-gj2Mk1ViSv",
+      "https://drive.google.com/uc?export=view&id=1ADRi1H89FLLKMklp0_itWhxgHiazB7vA",
+    ],
   },
   {
     title: "Sansify",
     description:
       "Branding | 4Ps | Build a online brand, Sell around 200+ Bottles in Business bazar | Sale Force Management",
     tags: ["Perfume brand", "Business banazar 23"],
-    imageUrl: mentormesh,
-    linkedInUrl: "https://www.linkedin.com/in/mralihassan02/details/projects/",
-    githubUrl: "https://github.com/RidaZaidi05/Mentor-Mesh",
+    imageUrl:
+      "https://drive.google.com/uc?export=view&id=18ecJRaxCWdRovnQB5XqulXWAcUhRN2dZ",
+    linkedInUrl: "https://www.linkedin.com/in/fahad-ishfaq-malik/",
+
     videoUrls: [
-      "https://youtu.be/2YnwgYh8mu4",
-      "https://youtu.be/bAXbcPbSWco",
-      "https://youtu.be/2YnwgYh8mu4",
+      "https://drive.google.com/uc?export=view&id=18TAJOtArGQ3fsJWSzI5VqAd_JuJHUtbP",
+      "https://drive.google.com/uc?export=view&id=18aF_Yj98NsBxBjbqLii8PiNoTcdbkhjc",
+      "https://drive.google.com/uc?export=view&id=18SDXsIpJ00C6TRhWOHEE9ypFOECC3znc",
+      "https://www.youtube.com/watch?v=N_UzIh7VnGg",
     ],
   },
 ];

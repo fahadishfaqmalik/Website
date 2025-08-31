@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { RxDoubleArrowRight } from "react-icons/rx";
-import { RxDoubleArrowLeft } from "react-icons/rx";
-import "./css/arrow-animation.css"
+import { RxDoubleArrowRight, RxDoubleArrowLeft } from "react-icons/rx";
+import Image from "next/image";
+import "./css/arrow-animation.css";
 import { useTheme } from "@/context/theme-context";
-
 
 export default function ProjectDemo({ videoUrls }: { videoUrls: string[] }) {
   const { theme } = useTheme();
@@ -23,6 +22,21 @@ export default function ProjectDemo({ videoUrls }: { videoUrls: string[] }) {
       /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([\w-]{11})/;
     const match = url.match(regex);
     return match ? match[1] : "";
+  }
+
+  function isYouTube(url: string) {
+    return /youtu\.?be/.test(url);
+  }
+
+  function isGoogleDrive(url: string) {
+    return /drive\.google\.com/.test(url);
+  }
+
+  function getDriveDirectLink(url: string) {
+    const match = url.match(/\/d\/([^/]+)\//);
+    return match
+      ? `https://drive.google.com/uc?export=view&id=${match[1]}`
+      : url;
   }
 
   return (
@@ -63,8 +77,6 @@ export default function ProjectDemo({ videoUrls }: { videoUrls: string[] }) {
               Project Demo ({current + 1}/{videoUrls.length})
             </h2>
 
-            {/* Layout: Button - Video - Button */}
-            {/* Layout: Arrow - Video - Arrow */}
             <div className="flex items-center justify-center gap-4 w-full relative">
               {/* Left Arrow */}
               {videoUrls.length > 1 && (
@@ -74,22 +86,62 @@ export default function ProjectDemo({ videoUrls }: { videoUrls: string[] }) {
                 </button>
               )}
 
-              {/* Sliding Video Container */}
+              {/* Sliding Container */}
               <div className="relative overflow-hidden w-full max-w-[640px]">
                 <div
                   className="flex transition-transform duration-500 ease-in-out"
                   style={{ transform: `translateX(-${current * 100}%)` }}
                 >
-                  {videoUrls.map((url, index) => (
-                    <iframe
-                      key={index}
-                      src={`https://www.youtube.com/embed/${getYouTubeId(url)}`}
-                      title={`YouTube video ${index}`}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="w-full h-[360px] flex-shrink-0 rounded-lg shadow-lg"
-                    />
-                  ))}
+                  {videoUrls.map((url, index) => {
+                    if (isYouTube(url)) {
+                      // Show YouTube Video
+                      return (
+                        <iframe
+                          key={index}
+                          src={`https://www.youtube.com/embed/${getYouTubeId(
+                            url
+                          )}`}
+                          title={`YouTube video ${index}`}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="w-full h-[360px] flex-shrink-0 rounded-lg shadow-lg"
+                        />
+                      );
+                    } else if (isGoogleDrive(url)) {
+                      // Show Google Drive Image with blur effect
+                      const imageUrl = getDriveDirectLink(url);
+                      return (
+                        <div
+                          key={index}
+                          className="relative w-full h-[360px] flex-shrink-0 rounded-lg overflow-hidden shadow-2xl"
+                        >
+                          {/* Blurred background */}
+                          <Image
+                            src={imageUrl}
+                            alt=""
+                            fill
+                            className="object-cover blur-md scale-110"
+                          />
+                          {/* Actual image */}
+                          <Image
+                            src={imageUrl}
+                            alt={`Project image ${index}`}
+                            fill
+                            className="object-contain relative z-10"
+                          />
+                        </div>
+                      );
+                    } else {
+                      return (
+                        <p
+                          key={index}
+                          className="text-center w-full h-[360px] flex items-center justify-center"
+                        >
+                          Unsupported media type
+                        </p>
+                      );
+                    }
+                  })}
                 </div>
               </div>
 
