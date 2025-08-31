@@ -136,39 +136,46 @@ export const skillsData = [
 
 export const certificatesData = [
   {
-    image: "/certificates/c11.jpeg",
+    image:
+      "https://drive.google.com/uc?export=view&id=17e-lrlHYm1S7Znjqd57LGpwlDbvpc9vn",
     layout: "wide",
   },
   {
-    image: "/certificates/c2.jpg",
-    // layout: "tall", // takes 2 rows height
+    image:
+      "https://drive.google.com/uc?export=view&id=161Ur7nzIFwlSsW6eFGzO0V0hSt5WBhVt",
   },
   {
-    image: "/certificates/c1.jpg",
-    // layout: "wide", // spans across both columns
+    image:
+      "https://drive.google.com/uc?export=view&id=17TlcxcTQ9OXAseNFmaWwWToyE9uquJ0s",
   },
   {
-    image: "/certificates/c4.jpg",
+    image:
+      "https://drive.google.com/uc?export=view&id=16dGLA2_944D07pO-RFsodywRbFdKjoCD",
   },
   {
-    image: "/certificates/c5.jpg",
-    layout: "mini",
+    image:
+      "https://drive.google.com/uc?export=view&id=16V6JXFHhBFKc7QMiRUA2lter6yofj1UF",
+    
   },
   {
-    image: "/certificates/c10.jpeg",
+    image:
+      "https://drive.google.com/uc?export=view&id=15kl1YQwgrEzEZMKZudCJA9bnnuDqlb96",
   },
   {
-    image: "/certificates/c6.jpg",
-    layout: "mini", // takes 2 rows height
+    image:
+      "https://drive.google.com/uc?export=view&id=161Ur7nzIFwlSsW6eFGzO0V0hSt5WBhVt",
   },
   {
-    image: "/certificates/c7.jpg",
+    image:
+      "https://drive.google.com/uc?export=view&id=16T6NHvkDrXyXWBMb_cD8Pqy8KYnlot6t",
   },
   {
-    image: "/certificates/c8.jpg",
+    image:
+      "https://drive.google.com/uc?export=view&id=165zR9MFLLA-xEyJJh3sZR3LEP0lM5rh4",
   },
   {
-    image: "/certificates/c9.jpg",
+    image:
+      "https://drive.google.com/uc?export=view&id=16JnkiSjiiS0gARKcBjftaxwB6fwkmc6G",
     // layout: "tall",
   },
 ];
