@@ -29,7 +29,7 @@ export default function About() {
           Forman Christian College
         </span>{" "}
         with a{" "}
-        <span className="font-bold dark:text-white/70">CGPA of 3.52/4.0</span>.
+        <span className="font-bold dark:text-white/70">CGPA of 3.53/4.0</span>.
         Skilled in{" "}
         <span className="font-bold dark:text-white/70">
           Amazon FBA (Private Label & Wholesale)
