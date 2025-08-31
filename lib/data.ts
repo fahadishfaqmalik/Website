@@ -64,7 +64,6 @@ export const experiencesData = [
   },
 ] as const;
 
-
 export const projectsData = [
   {
     title: "Lean Opertions",
@@ -96,9 +95,7 @@ export const projectsData = [
     title: "Sansify",
     description:
       "Branding | 4Ps | Build a online brand, Sell around 200+ Bottles in Business bazar | Sale Force Management",
-    tags: [
-      "Perfume brand" , "Business banazar 23"
-    ],
+    tags: ["Perfume brand", "Business banazar 23"],
     imageUrl: mentormesh,
     linkedInUrl: "https://www.linkedin.com/in/mralihassan02/details/projects/",
     githubUrl: "https://github.com/RidaZaidi05/Mentor-Mesh",
@@ -108,8 +105,7 @@ export const projectsData = [
       "https://youtu.be/2YnwgYh8mu4",
     ],
   },
-]; ;
-
+];
 
 export const skillsData = [
   // E-commerce & Business
@@ -121,6 +117,9 @@ export const skillsData = [
   "Listing Optimization",
   "PPC Management",
   "Client Communication",
+  "Lean Six Sigma (DMAIC)",
+  "Lean Operations (TIMWOOD)",
+  "Project Management",
   "Negotiation",
   "Sales Force Management",
 
@@ -133,7 +132,43 @@ export const skillsData = [
   "Google Docs & Slides",
 
   // Business Analytics & Strategy
-  "Lean Six Sigma (DMAIC)",
-  "Lean Operations (TIMWOOD)",
-  "Project Management",
 ] as const;
+
+export const certificatesData = [
+  {
+    image: "/certificates/c11.jpeg",
+    layout: "wide",
+  },
+  {
+    image: "/certificates/c2.jpg",
+    // layout: "tall", // takes 2 rows height
+  },
+  {
+    image: "/certificates/c1.jpg",
+    // layout: "wide", // spans across both columns
+  },
+  {
+    image: "/certificates/c4.jpg",
+  },
+  {
+    image: "/certificates/c5.jpg",
+    layout: "mini",
+  },
+  {
+    image: "/certificates/c10.jpeg",
+  },
+  {
+    image: "/certificates/c6.jpg",
+    layout: "mini", // takes 2 rows height
+  },
+  {
+    image: "/certificates/c7.jpg",
+  },
+  {
+    image: "/certificates/c8.jpg",
+  },
+  {
+    image: "/certificates/c9.jpg",
+    // layout: "tall",
+  },
+];

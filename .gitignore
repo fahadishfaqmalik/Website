@@ -9,7 +9,7 @@
 public/demo/*.mp4
 public/demo/*.mov
 
-
+public/certificates
 # testing
 /coverage
 
