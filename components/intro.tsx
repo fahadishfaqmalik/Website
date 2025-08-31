@@ -63,14 +63,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">👋 Hi, I’m Fahad Ishfaq.</span> A{" "}
-        <span className="font-bold">Marketing & Sales graduate</span> with
-        hands-on experience in <span className="font-bold">Amazon FBA</span>,{" "}
-        <span className="font-bold">Airbnb business</span>, and{" "}
-        <span className="font-bold">digital marketing</span>. I help brands grow
-        through <span className="font-bold">market research</span>,{" "}
-        <span className="font-bold">client strategies</span>, and{" "}
-        <span className="font-bold">data-driven execution</span>.
+        <span className="font-bold">👋 Hi, I’m Fahad Ishfaq.</span> I build and
+        scale <span className="font-bold">lean, customer-first brands</span>.
+        Across <span className="font-bold">Amazon FBA</span> and{" "}
+        <span className="font-bold">Airbnb</span>, I’ve run the full brand
+        strategy, operations, marketing, customer query handling, and converting
+        traffic into sales. I stay close to{" "}
+        <span className="font-bold">customers</span> and{" "}
+        <span className="font-bold">data</span> to iterate fast and drive
+        measurable growth.
       </motion.h1>
 
       <motion.div
