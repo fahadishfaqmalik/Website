@@ -167,11 +167,6 @@ export const certificatesData = [
   },
   {
     image:
-      "https://drive.google.com/uc?export=view&id=16V6JXFHhBFKc7QMiRUA2lter6yofj1UF",
-    
-  },
-  {
-    image:
       "https://drive.google.com/uc?export=view&id=15kl1YQwgrEzEZMKZudCJA9bnnuDqlb96",
   },
   {
